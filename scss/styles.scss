@@ -1,0 +1,33 @@
+// -變數
+@import '_variables.scss';
+
+// -mixin
+@import './mixins/rwd';
+
+// -功能
+@import './features/modal';
+@import './features/backtop';
+@import './features/splitText';
+@import './features/shooting_star';
+
+// -全域設定
+@import '_global.scss';
+
+// -內容框框 繼承樣式
+@import './extends/frame';
+
+// -swiper
+@import 'features/swiper';
+
+// -paralax
+@import 'features/parallax';
+
+// -區塊結構
+@import '_navbar.scss';
+@import '_home.scss';
+@import '_section01.scss';
+@import '_section02.scss';
+@import '_section03.scss';
+@import '_section04.scss';
+@import '_section05.scss';
+@import '_footer.scss';

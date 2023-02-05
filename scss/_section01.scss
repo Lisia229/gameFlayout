@@ -1,0 +1,10 @@
+#section01{
+  // ! extexd 繼承樣式 %
+  @extend %frame;
+  top: -50px;
+
+  @include lg{
+    top: 0;
+    background: url('/images/section01_top_mask.png') no-repeat center top/100%;
+  }
+}

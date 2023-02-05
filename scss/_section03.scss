@@ -1,0 +1,37 @@
+#section03 {
+  @extend %frame;
+  top: -20px;
+  .nav-link {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  .accordion-header {
+    button {
+      font-size: 1.3rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .list-group-item {
+    padding: 0.5rem 0;
+  }
+
+  .accordion-button:not(.collapsed){
+    background:#321E00;
+    color: white;
+  }
+
+  a.active {
+    background: #996633;
+    color: white;
+    padding: 0.5rem;
+  }
+
+  @include lg {
+    top: 0;
+    margin-top: 90px;
+  }
+}

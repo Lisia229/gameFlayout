@@ -1,0 +1,52 @@
+#home {
+  // -xs 從小版面開始寫
+  height: 350px;
+  position: relative;
+  margin-top: 60px; //-因為原本上面的東西被 navbar 蓋住 所以要讓他往下
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  // -換輪播圖的箭頭
+  // -左鍵
+  .carousel-control-prev {
+    background: url('/images/arrow_left.png') no-repeat center/80px;
+    opacity: 1;
+    transition: 0.3s;
+    z-index: 10;
+  }
+
+  .carousel-control-prev:hover {
+    background: url('/images/arrow_left_hover.png') no-repeat center/100px;
+  }
+
+  // -右鍵
+  .carousel-control-next {
+    background: url('/images/arrow_right.png') no-repeat center/80px;
+    opacity: 1;
+    transition: 0.3s;
+    z-index: 10;
+  }
+
+  .carousel-control-next:hover {
+    background: url('/images/arrow_right_hover.png') no-repeat center/100px;
+  }
+
+  @include lg {
+    height: 100vh;
+    margin-top: 0;
+
+    .mask {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      background: url('../images/mask.png') no-repeat center/100% 100%;
+      pointer-events: none;
+    }
+  }
+}
